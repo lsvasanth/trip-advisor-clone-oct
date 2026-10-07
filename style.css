@@ -1,0 +1,370 @@
+body {
+    cursor: pointer;
+    font-family: "Gabarito", sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 10px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background-color: white;
+   
+
+}
+
+.side-navbar {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    user-select: none;
+    position: sticky;
+    z-index: 1;
+
+}
+
+.sign {
+    border: black 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    animation-name: vasanth;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+
+}
+
+.title-center {
+    text-align: center;
+    padding: 30px;
+    font-size: 25px;
+}
+
+
+
+
+.ai {
+    border: 1px #7CB342 solid;
+    border-radius: 20px;
+    padding: 10px;
+    animation-name: vasanth;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes vasanth {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+    
+}
+
+.underline {
+    border-bottom: 1px black solid;
+    padding: 10px;
+    animation-name: vasanth;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    align-items: center;
+    min-height: 100px;
+
+
+}
+
+.search-box {
+    position: relative;
+    width: 270px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.search-box input {
+    flex-grow: 1;
+    background-color: #16192b;
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: 0.5 ease;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+    transition: 2s;
+
+
+
+
+}
+
+.search-box input {
+    padding: 20px;
+}
+
+.search-box input:focus {
+    transition: 2s;
+    border-color: #00f2fe;
+    box-shadow: 0 0 25px #00f2fe, inset 0 0 10px #00f2fe;
+    ;
+    ;
+}
+
+.sign:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.search-side {
+    border: 1px solid #7CB342;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: #7CB342;
+    color: white;
+}
+
+.cart p {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.title {
+
+    margin: 30px;
+}
+
+@media screen and (max-width:600px) {
+    .side-navbar {
+        display: none;
+    }
+
+}
+
+.search-side:hover {
+    background-color: transparent;
+    transition: 2s;
+    text-shadow: #00f2fe;
+
+}
+
+.para {
+    margin-top: 10px;
+
+}
+
+.hotels {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation-name: vasanth;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.hotels1 {
+    border-bottom: 3px solid black;
+    padding: 5px;
+}
+
+.hotels2:hover {
+    border-bottom: 3px solid black;
+    padding: 5px;
+
+}
+
+.hotels3:hover {
+    border-bottom: 3px solid black;
+    padding: 5px;
+
+}
+
+.hotels4:hover {
+    border-bottom: 3px solid black;
+    padding: 5px;
+
+}
+
+@media screen and (max-width:600px) {
+    .hotels4 {
+        display: none;
+    }
+
+}
+
+.images {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.images img {
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    height: 250px;
+
+}
+
+.pictures img{
+    width: 260px;
+    gap: 10px;
+}
+.pictures{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+.pictures1{
+    padding: 20px;
+    border: solid black 1px;
+    border-radius: 30px;
+}
+.pictures1 img{
+    border-radius: 30px;
+}
+.hello{
+    padding: 20px;
+    margin: 10px;
+}
+.pictures2{
+    padding: 20px;
+    border: solid black 1px;
+    border-radius: 30px;
+}
+.pictures2 img{
+    border-radius: 30px;
+}
+.pictures3{
+    padding: 20px;
+    border: solid black 1px;
+    border-radius: 30px;
+}
+.pictures3 img{
+    border-radius: 30px;
+}
+.pictures4{
+    padding: 20px;
+    border: solid black 1px;
+    border-radius: 30px;
+}
+.pictures4 img{
+    border-radius: 30px;
+}
+@media screen and (min-width:600px) {
+    .pictures4{
+        display: none;
+    }
+    
+}
+.p1{
+    text-align: center;
+    padding: 2px;
+    margin-top: 3px;
+    background-color: orange;
+    color: white;
+
+}
+.p2{
+    text-align: center;
+    padding: 2px;
+    margin-top: 3px;
+    background-color: orange;
+    color: white;
+
+}.p3{
+    text-align: center;
+    padding: 2px;
+    margin-top: 3px;
+    background-color: orange;
+    color: white;
+
+}.p4{
+    text-align: center;
+    padding: 2px;
+    margin-top: 3px;
+    background-color: orange;
+    color: white;
+
+}
+.sec{
+    padding: 20px;
+}
+.dining img{
+    width: 250px;
+    height: 350px;
+}
+.dining{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    
+    border-radius: 30px;
+}
+@media screen and (max-width:600px) {
+    .dining{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    
+}
+.footer-section1{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+.footer-section1 p{
+    padding: 10px;
+    margin-left: 20px;
+}
+.footer-section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.footer{
+    background-color: black;
+    color: white;
+}
